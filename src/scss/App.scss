@@ -2,26 +2,39 @@ body {
   margin: 0 40px;
 }
 .output {
-  &__rank {
-    display: block;
-    width: 40px;
-    height: 40px;
-    counter-reset: none;
-    counter-increment: number;
-    background-color: #aaaddd;
-    font-size: 20px;
-    border-radius: 6px;
-    text-align: center;
-    &::before {
-      display: flex;
+  &-rank {
+    &__number {
+      display: block;
       width: 40px;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      content: counter(number);
+      height: 40px;
+      counter-reset: none;
+      counter-increment: number;
+      background-color: #aaaddd;
+      font-size: 20px;
+      border-radius: 6px;
+      text-align: center;
+      &::before {
+        display: flex;
+        width: 40px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        content: counter(number);
+      }
+      & + & {
+        margin-top: 4px;
+      }
     }
-    & + & {
-      margin-top: 4px;
+  }
+  &-findIndex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+    &__button {
+      display: block;
+      right: 0;
+      width: 96px;
     }
   }
 }
