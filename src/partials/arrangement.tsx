@@ -13,7 +13,7 @@ function Arrangement() {
     };
 
     return (
-        <section className="output-arrangement">
+        <section className="output-arrangement" data-find-index="section">
             <h2>配列操作</h2>
             {loop()}
         </section>

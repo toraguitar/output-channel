@@ -3,6 +3,7 @@ import "./scss/App.scss";
 import Rank from "./partials/rank";
 import FindIndex from "./partials/findindex";
 import Arrangement from "./partials/arrangement";
+import Accordion from "./partials/accordion";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Rank />
       <FindIndex />
       <Arrangement />
+      <Accordion />
     </main>
   );
 }
