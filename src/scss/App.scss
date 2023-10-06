@@ -1,6 +1,7 @@
 body {
   margin: 0 40px;
 }
+
 .output {
   &-rank {
     &__number {
@@ -13,6 +14,7 @@ body {
       font-size: 20px;
       border-radius: 6px;
       text-align: center;
+
       &::before {
         display: flex;
         width: 40px;
@@ -21,20 +23,31 @@ body {
         align-items: center;
         content: counter(number);
       }
-      & + & {
+
+      &+& {
         margin-top: 4px;
       }
     }
   }
+
   &-findIndex {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-top: 20px;
+
     &__button {
       display: block;
       right: 0;
       width: 96px;
     }
+  }
+
+  .isOpen {
+    display: block;
+  }
+
+  .isClose {
+    display: none;
   }
 }

@@ -4,6 +4,7 @@ import Rank from "./partials/rank";
 import FindIndex from "./partials/findindex";
 import Arrangement from "./partials/arrangement";
 import Accordion from "./partials/accordion";
+import UseState from "./partials/useState";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <FindIndex />
       <Arrangement />
       <Accordion />
+      <UseState />
     </main>
   );
 }
