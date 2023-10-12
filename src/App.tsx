@@ -6,6 +6,7 @@ import Arrangement from "./partials/arrangement";
 import Accordion from "./partials/accordion";
 import UseState from "./partials/useState";
 import UseEffect from "./partials/useEffect";
+import UseContext from "./partials/useContext";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Accordion />
       <UseState />
       <UseEffect />
+      <UseContext />
     </main>
   );
 }
